@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Activist Home</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+
+<body>
+    <div id="banner" class="bannerDiv">
+        <h1>
+            <b><i>data science for good!</i></b>
+        </h1>
+        <div id="navbar">
+            <a href="info.html"><div id="nav-bg"><div id="nav-text">info</div></div></a>
+            <div id="nav-fg"><div id="nav-text">projects</div></div>
+            <a href="join.html"><div id="nav-bg"><div id="nav-text">join</div></div></a>
+        </div>
+    </div>
+
+    <div id="spacer" class="spacerDiv">
+    </div>
+
+    <script>
+        function spaceDivs() {
+            let absoluteDivHeight = document.getElementsByClassName('bannerDiv')[0].offsetHeight;
+            let spacer = document.getElementsByClassName('spacerDiv')[0];
+            spacer.style.height = absoluteDivHeight + 10 + "px";
+        }
+        spaceDivs();
+        window.onresize = spaceDivs;
+    </script>
+
+    <div id="content">
+        <p>
+            activist.ai is a way for software engineers, data scientists, and researchers to discover socially conscious projects to volunteer for.
+        </p>
+    </div>
+
+</body>
+</html>

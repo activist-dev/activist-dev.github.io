@@ -1,0 +1,90 @@
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+    min-width: 500px;
+}
+
+div {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#banner {
+    width:100%;
+    position:fixed;
+    top:20px;
+    background-color:orange;
+    position:absolute;
+    left:0px;
+
+    /*border-style: solid;
+    border-color: black;
+    border-width: 1px;*/
+}
+
+h1 {
+    margin-left: 10%;
+    margin-top: 25px;
+    color: white;
+    font-family: helvetica;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+#nav-fg {
+    background-color:white;
+    border-style:solid;
+    border-color:white;
+    border-width:4px;
+    color:orange;
+    width: calc((100% / 3) - 2%);
+    height:48px;
+    margin:1%;
+    float:left;
+    text-align: center;
+    cursor: default;
+}
+
+#nav-bg {
+    background-color:orange;
+    border-style:solid;
+    border-color:white;
+    border-width:4px;
+    color:white;
+    width: calc((100% / 3) - 2%);
+    height:48px;
+    margin:1%;
+    float:left;
+    text-align: center;
+    transition: background-color .5s;
+}
+
+#nav-bg:hover {
+    background-color:#FFC04D;
+}
+
+#nav-text {
+    font-family: helvetica;
+    font-size: 26px;
+    margin-top: 7px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#navbar {
+    position:absolute;
+    left:8%;
+    right:8%;
+    bottom:-30px;
+}
+
+#content {
+    position: relative;
+    width: auto;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right:10%;
+}
